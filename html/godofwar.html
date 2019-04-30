@@ -1,0 +1,712 @@
+<!doctype html>
+<html style='font-size:18px !important'>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>新战神体验报告</title><link href='https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+  @page { margin: 20mm 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
+
+@include-when-export url(https://fonts.loli.net/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+/* =========== */
+
+:root {
+	--active-file-bg-color: #dadada;
+	--active-file-bg-color: rgba(32, 43, 51, 0.63);
+	--active-file-text-color: white;
+	--bg-color: #f3f2ee;
+	--text-color: #1f0909;
+	--control-text-color: #444;
+	--rawblock-edit-panel-bd: #e5e5e5;
+
+	--select-text-bg-color: rgba(32, 43, 51, 0.63);
+  --select-text-font-color: white;
+}
+
+pre {
+	--select-text-bg-color: #36284e;
+	--select-text-font-color: #fff;
+}
+
+html {
+	font-size: 16px;
+}
+
+html, body {
+	background-color: #f3f2ee;
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	color: #1f0909;
+	line-height: 1.5em;
+}
+
+/*#write {
+	overflow-x: auto;
+    max-width: initial;
+	padding-left: calc(50% - 17em);
+    padding-right: calc(50% - 17em);
+}
+
+@media (max-width: 36em) {
+ 	#write {
+ 		padding-left: 1em;
+    	padding-right: 1em;
+ 	}
+}*/
+
+#write {
+	max-width: 40em;
+}
+
+ol li {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* styles */
+
+/* ====== */
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 1.875em;
+	/*30 / 16*/
+	line-height: 1.6em;
+	/* 48 / 30*/
+	margin-top: 2em;
+}
+h2,
+h3 {
+	font-size: 1.3125em;
+	/*21 / 16*/
+	line-height: 1.15;
+	/*24 / 21*/
+	margin-top: 2.285714em;
+	/*48 / 21*/
+	margin-bottom: 1.15em;
+	/*24 / 21*/
+}
+h3 {
+	font-weight: normal;
+}
+h4 {
+	font-size: 1.125em;
+	/*18 / 16*/
+	margin-top: 2.67em;
+	/*48 / 18*/
+}
+h5,
+h6 {
+	font-size: 1em;
+	/*16*/
+}
+h1 {
+	border-bottom: 1px solid;
+	margin-bottom: 1.875em;
+	padding-bottom: 0.8125em;
+}
+/* links */
+
+a {
+	text-decoration: none;
+	color: #065588;
+}
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+/* block spacing */
+
+p,
+blockquote,
+.md-fences {
+	margin-bottom: 1.5em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1.5em;
+}
+/* blockquote */
+
+blockquote {
+	font-style: italic;
+	border-left: 5px solid;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+/* lists */
+
+ul,
+ol {
+	margin: 0 0 1.5em 1.5em;
+}
+/* tables */
+.md-meta,.md-before, .md-after {
+	color:#999;
+}
+
+table {
+	margin-bottom: 1.5em;
+	/*24 / 16*/
+	font-size: 1em;
+	/* width: 100%; */
+}
+thead th,
+tfoot th {
+	padding: .25em .25em .25em .4em;
+	text-transform: uppercase;
+}
+th {
+	text-align: left;
+}
+td {
+	vertical-align: top;
+	padding: .25em .25em .25em .4em;
+}
+
+code,
+.md-fences {
+	background-color: #dadada;
+}
+
+code {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.md-fences {
+	margin-left: 2em;
+	margin-bottom: 3em;
+	padding-left: 1ch;
+	padding-right: 1ch;
+}
+
+pre,
+code,
+tt {
+	font-size: .875em;
+	line-height: 1.714285em;
+}
+/* some fixes */
+
+h1 {
+	line-height: 1.3em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+p + ul,
+p + ol{
+	margin-top: .5em;
+}
+
+h3 + ul,
+h4 + ul,
+h5 + ul,
+h6 + ul,
+h3 + ol,
+h4 + ol,
+h5 + ol,
+h6 + ol {
+	margin-top: .5em;
+}
+
+li > ul,
+li > ol {
+	margin-top: inherit;
+	margin-bottom: 0;
+}
+
+li ol>li {
+	list-style-type: lower-alpha;
+}
+
+li li ol>li{
+	list-style-type: lower-roman;
+}
+
+h2,
+h3 {
+	margin-bottom: .75em;
+}
+hr {
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+}
+h1 {
+	border-color: #c5c5c5;
+}
+blockquote {
+	border-color: #bababa;
+	color: #656565;
+}
+
+blockquote ul,
+blockquote ol {
+	margin-left:0;
+}
+
+.ty-table-edit {
+	background-color: transparent;
+}
+thead {
+	background-color: #dadada;
+}
+tr:nth-child(even) {
+	background: #e8e7e7;
+}
+hr {
+	border-color: #c5c5c5;
+}
+.task-list{
+	padding-left: 1rem;
+}
+
+.md-task-list-item {
+	padding-left: 1.5rem;
+	list-style-type: none;
+}
+
+.md-task-list-item > input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.25rem;
+  	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #F3F2EE;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	color: inherit;
+}
+
+#write pre.md-meta-block {
+	min-height: 1.875rem;
+	color: #555;
+	border: 0px;
+	background: transparent;
+	margin-top: -4px;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.md-image>.md-meta {
+	color: #9B5146;
+}
+
+.md-image>.md-meta{
+	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+}
+
+
+#write>h3.md-focus:before{
+	left: -1.5rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h4.md-focus:before{
+	left: -1.5rem;
+	top: .25rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h5.md-focus:before{
+	left: -1.5rem;
+	top: .0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+#write>h6.md-focus:before{
+	left: -1.5rem;
+	top: 0.3125rem;
+	color:#999;
+	border-color:#999;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+.md-toc-content:empty:before{
+	color: #065588;
+}
+.md-toc-item {
+	color: #065588;
+}
+#write div.md-toc-tooltip {
+	background-color: #f3f2ee;
+}
+
+#typora-sidebar {
+	background-color: #f3f2ee;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+  	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+
+.pin-outline #typora-sidebar {
+	background: inherit;
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+.pin-outline #typora-sidebar:hover .outline-title-wrapper {
+	border-left:1px dashed;
+}
+
+.outline-item:hover {
+  background-color: #dadada;
+  border-left: 28px solid #dadada;
+  border-right: 18px solid #dadada;
+}
+
+.typora-node .outline-item:hover {
+  	border-right: 28px solid #dadada;
+}
+
+.outline-expander:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  font-size:14px;
+  top: 1px;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+  content: "\f0d7";
+}
+
+.modal-content {
+	background-color: #f3f2ee;
+}
+
+.auto-suggest-container ul li {
+	list-style-type: none;
+}
+
+/** UI for electron */
+
+.megamenu-menu,
+#top-titlebar, #top-titlebar *,
+.megamenu-content {
+	background: #f3f2ee;
+	color: #1f0909;
+}
+
+.megamenu-menu-header {
+	border-bottom: 1px dashed #202B33;
+}
+
+.megamenu-menu {
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+header, .context-menu, .megamenu-content, footer {
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+    color: #1f0909;
+}
+
+#megamenu-back-btn {
+	color: #1f0909;
+	border-color: #1f0909;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color: #1f0909;
+}
+
+.megamenu-menu-list li a:hover, .megamenu-menu-list li a.active {
+	color: inherit;
+	background-color: #e8e7df;
+}
+
+.long-btn:hover {
+	background-color: #e8e7df;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+    background-color: transparent !important;
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+    color: inherit;
+}
+
+.megamenu-menu-panel .btn {
+	background-color: #D2D1D1;
+}
+
+.btn-default {
+	background-color: transparent;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+.ty-show-word-count #footer-word-count {
+	background: #c7c5c5;
+}
+
+#typora-quick-open {
+    background-color: inherit;
+}
+
+.md-diagram-panel {
+	margin-top: 8px;
+}
+
+.file-list-item-file-name {
+	font-weight: initial;
+}
+
+.file-list-item-summary {
+	opacity: 1;
+}
+
+.file-list-item {
+	color: #777;
+}
+
+.file-list-item.active {
+	background-color: inherit;
+	color: black;
+}
+
+.ty-side-sort-btn.active {
+	background-color: inherit;
+}
+
+.file-list-item.active .file-list-item-file-name  {
+	font-weight: bold;
+}
+
+.file-list-item{
+    opacity:1 !important;
+}
+
+.file-library-node.active>.file-node-background{
+	background-color: rgba(32, 43, 51, 0.63);
+	background-color: var(--active-file-bg-color);
+}
+
+.file-tree-node.active>.file-node-content{
+	color: white;
+	color: var(--active-file-text-color);
+}
+
+.md-task-list-item>input {
+	margin-left: -1.6em;
+	margin-top: calc(1rem - 12px);
+}
+
+input {
+	border: 1px solid #aaa;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header:hover, 
+.megamenu-menu-header:focus {
+	color: inherit;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+}
+
+/* https://github.com/typora/typora-issues/issues/2046 */
+.os-windows-7 strong,
+.os-windows-7 strong  {
+	font-weight: 760;
+}
+
+ .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name='header-n0' class='md-header-anchor '></a>新战神体验报告</h1><p>五一假期通关了PS4上新的独占大作——战神God of War，随便谈谈感想。</p><p>战神的前几代，我曾在psp上体验过一点。但当时懵懂无知，只顾着割草爽快，既不懂分析机制系统，也完全没想过了解剧情。所以在新战神的整个游戏流程中，我几乎没法与前作进行有效的对比。同时，因为我在通关过程中面对困难战斗时直接选择了服软调难度，所以没有非常深度的体验战斗系统。所以聊到的关于战斗部分的东西，可能更多的是我的片面观点，不一定正确。还有另一点就是，我只打通了主线剧情，支线随便刷了几个，没有全清，两个挑战世界更是根本没去，女武神也只打了一只，我后面说到的东西完全基于我体验过的部分，可能会有遗漏。</p><hr /><p>如果说新战神在分类时也归入了动作角色扮演一类，那我觉得在A与RP之间，他更偏向RP。</p><p>并不是指其在机制系统上更偏向打怪升级的传统RPG套路，而是指它的动作系统并不突出，很多战斗实际上更注重叙事体验，重心有所偏移。</p><h2><a name='header-n7' class='md-header-anchor '></a>战斗</h2><p>新战神的战斗系统其实相当丰富，随着流程的推进，奎爷的新武器会不断解锁更多的动作。再加上可以自由搭配的“卢恩符文攻击”，战斗的方式其实是多变的。并且游戏其实并不存在等级，用来表示人物能力的等级数实际是由装备属性计算出的。战斗获得的经验值是用来解锁新的武器动作以及升级符文攻击技能的。</p><p>这样以来，只要你有钱买不同的新装备，你就可以在后期通过更换装备来重新分配属性值，以达到彻底转换战斗思路的目的。同时，儿子的存在进一步丰富了战斗中的操作。</p><p>不过战神中复杂多变的战斗系统并没有什么太多发光的机会。游戏在简单难度中怪物血量很少，华丽多段的连招往往没法完全施展；而高难度中怪物的攻击欲望又更强，你需要更多的用防御或闪躲来规避伤害，同样无法完成很长的连招。更不用说在更高的难度中，小怪们强度非凡而且硬直极短，战斗基本是没怒扔斧子，有怒扔石头，儿子疯狂射，老汉各种躲的节奏。</p><p>总之，尽管新战神仍然打磨出了刀刀到肉的出色打击感、真实生动的场景互动表现、令人血脉喷张的处决动作，但其战斗部分依然没法称上完美。</p><h3><a name='header-n12' class='md-header-anchor '></a>BOSS</h3><p>并且仍有一个更大的问题制约着新战神在战斗上的出彩——BOSS战。</p><p>新战神中的boss不多，更不用说其中的一些仿佛是boss的家伙在后面的流程中又成为了精英怪。</p><p>简单列一下能称为BOSS战的大战对手：</p><ul><li>抢鹿柱子哥</li><li>暗精灵国王</li><li>龙</li><li>冥界柱子哥</li><li>冰火柱子哥</li><li>雷神家的蠢儿子</li><li>巴德尔</li></ul><p>可以看到柱子哥出现了三次。其实不止这三个，游戏中还有更多的柱子哥作为精英怪存在。这也是新战神在战斗部分的一个问题——敌人种类过于重复。各种颜色的柱子哥、食人魔、远古尸鬼、巫婆、梦魇怪，看上去不同的它们其实大同小异。让我想起早些时候的另一款动作游戏仁王中为人诟病的一点也是怪物种类单一，重复度高。新战神中虽然通过换颜色改属性来做了区分，但确实还是会使玩家产生审美疲劳。</p><p>在列举boss时，我考虑到了在当时的流程中给予玩家的挑战、其在整个关卡中的位置以及他的身份。如果不看后两条的话，三个柱子哥以及暗精灵国王其实都不太有资格称得上boss。柱子哥作为精英怪泛滥，并且列出的几个虽然比较特殊，但攻击模组也十分相似，只是有些各自的特性。暗精灵国王的战斗出现在精灵国度的关底，其身份又特殊，可以算是一场阶段性的boss战，但强度实在一般。所以我只把其他的三组boss单独拿出来说了。</p><p>&nbsp;</p><p>&nbsp;</p><h4><a name='header-n35' class='md-header-anchor '></a>龙</h4><p>龙是全游戏唯一的超巨型boss，就是那种身体大多在地图之外，只留爪子和头在场景里的。这场boss战更像是老战神里的boss战。通过特殊交互一步步削弱boss，多次触发处决，最终伴随华丽且极富史诗感的动画终结boss。</p><p>龙也是整个游戏让我感觉最爽快度战斗。整场战斗中融进了这作中更加强调的场景交互，带一点解谜的味道。最后的处决动画也十分过瘾。</p><p>不过因为超巨型的体型和强调场景交互的打法，龙注定不是一个困难的boss。不过boss并不是越难越好的，龙的整场战斗节奏把控的不错，处决动画好看爽快，应该是整个游戏最出色的boss战设计了。</p><h4><a name='header-n39' class='md-header-anchor '></a>雷神家的蠢儿子</h4><p>这个双子boss感觉并不出彩。二人作为神，确实没什么排面。在战斗中大多数时间老汉和儿子分别对付一个，二人也没太多联动。我玩的普通难度感觉随便砍砍就完事儿了。</p><p>战斗后面有一个特殊的机制：父子俩被困在黑暗中背靠背，两个敌人会从黑暗中突然杀出。玩家要观察奎爷身边的指示圈确定方向，快速转身张开盾牌。后来两个敌人还会声东击西，先冲出来的一个不攻击，趁奎爷撑盾不能移动时再从背后杀出另一个。这个机制应该算是这场boss战难得能让人记住的部分了。</p><h4><a name='header-n42' class='md-header-anchor '></a>巴德尔</h4><p>这位光神在游戏中要与奎爷交手三次，其中两次有普通的战斗环节，中间的一次只有类似QTE的场景战斗。巴德尔作为最终boss，在游戏早起就与奎爷交战过一次，使得他很难提供最终boss的那种压迫感。就是说，尽管他在最终战中变得更强，招式也更多，但毕竟是之前的手下败将，而且招式动作也确实大同小异。</p><p>巴德尔的最终战中有值得关注的地方。作为最终战，这场战斗融合了很多之前出现过的元素：巴德尔的基础招式与第一次交手相似；冰火属性切换对应两种武器；雷神儿子一战中奎爷父子背靠背的备战姿势；第二次面对巴德尔时龙背上的QTE。最终战很好的让玩家在之前战斗中学到的经验得以应用，整场战斗虽然被分成个数个阶段，但体验却十分流畅。尽管这场战斗没有屠龙时的史诗感，但出色的镜头设计也让这场战斗拥有电影般的体验，绝对是优秀的最终战。</p><p>&nbsp;</p><p>总的来说，新战神的boss战虽然不差，但很难给人留下很深的印象（除了龙）。再加上小怪确实够强，进一步弱化了boss们占的比重。为了更好的制造流畅的叙事体验，boss战确实做了很多妥协和让步。这确实让新战神没法成为最好的动作游戏，但却不会影响战神的优秀。</p><h2><a name='header-n47' class='md-header-anchor '></a>叙事</h2><p>新战神明显在叙事上下了更大的功夫。</p><h3><a name='header-n49' class='md-header-anchor '></a>故事</h3><p>先聊聊故事本身。这一部作为新战神系列的开篇之作，更多起到一个铺垫和承前启后的作用。主题围绕奎托斯努力摆脱不堪回首的过去，随着儿子阿特柔斯的成长以及巴德尔母子间矛盾的升级爆发，奎托斯也一点点找到了摆脱过去的正道。</p><p>在故事的开端，奎托斯将自己的过去完全封印。他不对任何人提起，甚至不和自己的亲儿子讲一句。他把链刀藏进地下，拿起不顺手的新武器。他害怕自己封印起的过去被人知道，他害怕自己的伤疤再被人揭开。</p><p>而儿子却因为他的一味隐瞒受伤，他不得不拿起他雪藏的混沌双刃，再一次唤醒自己战斗的记忆。而在旅程中，奎托斯渐渐明白逃避不是永远的解决办法。他开始对儿子讲起自己的从前，一点点打开记忆的封印。他向儿子坦白自己曾犯下的罪行。</p><p>他知道有很多坏的神，但他也知道神本可以是善良的。他希望儿子不要继承他的错误，而是超越自己，成为更优秀的神。他甚至希望不要再有任何人踏上他走过的痛苦的道路，所以他才出手阻拦巴德尔，阻止他向亲生母亲复仇。</p><p>所以，无论是前期奎托斯隐瞒身份隐瞒经历，还是他对儿子的说教与斥责，又或者是他在最终战对巴德尔和芙蕾雅的态度，都是出于他想要摆脱自己痛苦的过去经历。这个唯一的中心主题使得整个故事变得十分完整。</p><p>故事中的主要角色都在这段旅程中得到了成长，奎托斯终于对过去释怀；阿特柔斯明白了如何成为一名好的神；矮人兄弟最终重新聚首；芙蕾雅也试图重新找回母亲的职责了——尽管她的母爱最终毁掉了她的一个儿子。</p><p>新战神的故事只是未来系列的开端，但这个承前启后的故事确实十分完整而优秀。</p><h3><a name='header-n57' class='md-header-anchor '></a>叙事方法</h3><p>儿子阿特柔斯的加入使得叙事变的简单了很多，通过父子之间的交流与互动，故事得以顺畅的推进。而剧情的重大转折，也几乎全都伴随着儿子的成长变化。</p><p>为了讲好这个游戏中的故事，编剧有意识的将大多数角色简单化了。大部分角色从头到尾只有唯一不变的本源欲望，而其所有行为都围绕着这个欲望展开，从这个欲望出发。这让塑造完整立体的角色形象变的简单。比如女巫芙蕾雅始终只想修复与儿子之间的关系，无论是她对别人的儿子阿特柔斯爱护有加，还是对槲寄生的激烈态度，所有行为一旦有了唯一的出发点，人物就容易被理解。</p><p>除了角色的本源欲望不改变，很多角色也有不会改变的性格特点。铁匠哥哥的不修边幅；铁匠弟弟的洁癖；摩迪的软弱与嫉妒心。在ARPG中，叙事不可避免的被战斗分割，在这种碎片化的叙事中，始终如一的特性能够让角色更容易被玩家记住并接受。这不仅在配角身上发生，在主角身上也是，毕竟尽管新战神在很多的boss战中加入了更多的情感话体验，但与小怪的战斗依然会分割玩家在故事上对于主角们的认识。</p><h2><a name='header-n61' class='md-header-anchor '></a>其他</h2><h3><a name='header-n62' class='md-header-anchor '></a>视角</h3><p>从新战神公布之初，其第三人称越肩视角的设置就引起热议。这种视角在动作游戏中十分少见，更多的出现在射击游戏中。人们担心固定的视角会让整个战斗部分变的僵硬。但从实际的效果来看，战神在摄像机的处理上做的很优秀，固定视角在大多数时间没带来僵硬的感觉。而对于身后的敌人，游戏除了有标示器指明屏幕外敌人的位置以及攻击方式之外，还有一键转身的操作。虽然大范围转视角依然有点别扭，但已经能够很好的应对战斗中的各种情况了。</p><p>而这个固定的视角其实也带来了好处。与黑暗之魂或者怪物猎人这种自由视角动作游戏相比，战神的固定越肩视角带来了更强的动感和画面冲击力。固定的摄像机让每一次冲刺和翻滚都能带来更多的画面变化，提高玩家的代入感。</p><h3><a name='header-n65' class='md-header-anchor '></a>解谜元素</h3><p>新战神中做了非常多的解谜要素，但相对优雅的只用到了扔斧子或者扔其他东西这个操作。对于大多数扔斧子的解谜，这个动作与战斗中的扔斧子高度统一，没有带来任何的额外成本。有些地方将扔斧子一去一回的路径都利用到了，也确实巧妙。而扔双刀以及扔水晶的部分则相对比较独立，但动作依然是扔，并没有太过分离，而且这种解谜也不太多。</p><p>其他还有几处纯粹的谜题型解谜，并不太难，也不是重点，就不多展开讨论了。</p><h3><a name='header-n68' class='md-header-anchor '></a>支线</h3><p>我打的支线并不多，但在这仅有的几个支线中，我并没有感到与主线的分割感。</p><p>在支线的故事中，角色们也没有偏离他们的本源欲望。比如在一个死亡船长的任务中，奎爷就用船长的经历教育儿子要能为自己做出的错事负责任并想办法弥补，这完全就是出于他想要弥补过去错误，并且希望儿子不再重蹈自己覆辙的本源欲望。</p><h3><a name='header-n71' class='md-header-anchor '></a>一镜到底</h3><p>这作战神没有任何的加载画面，这可能也抬高了各大游戏媒体的评分。除了死亡，否则不会有任何的加载画面。</p><p>并且不止没有加载画面，整个流程一镜到底，甚至不存在任何的镜头切换。这让整个游戏的流畅度得到巨大的提升。在几场boss战中，这种流畅的镜头带来了非常优秀的电影级体验。（不过我用的slim依然出现了一两次画面顿住加载了一两秒的情况，十分丢人）</p><p>猜测游戏应该是用了类似开门动作或者是比较长的攀爬或者蹲伏前进这种不太会有场景变化的时间来进行场景加载的。</p><h3><a name='header-n75' class='md-header-anchor '></a>传送</h3><p>传送的机制在游戏中只能从各地回到地图中心的传送门，只有在主线剧情通关后才能进行自由传送。不过游戏流程相对线性，如果不是困难或更高难度的话，主线的难度就偏低，并不需要刻意刷支线来积攒装备。所以一门心思的通关主线的话，不太会用得上自由传送，而通关后开始刷支线时，自由传送的能力已经解锁了。</p><p>结合前面说的场景加载，传送时肯定是需要进行大量的加载工作的。新战神在这里玩了个trick：进入传送门后会进入一个异世界，这个世界只有一个环形的小路，玩家在这里一直跑也只能是不停的转圈。当加载完成后，出口的门才会出现在主角面前。而且环形路的大小刚刚合适，如果玩家一门心思的跑的话，很难注意到这是个圈，而跑着跑着前方就是门，让玩家有一种“我是在一条路上跑到了出口”的错觉。</p><h2><a name='header-n78' class='md-header-anchor '></a>最后</h2><p>新战神是一部十分出色的游戏。他优秀的在一部动作游戏中讲好了一个故事，而故事的主题又非常的恰当，无论是对于战神整个系列而言，还是奎爷父子这对关键角色而言。</p><p>战斗上虽然不够出彩，但视角的设计、镜头语言的使用、场景细节的刻画等等，让整个游戏的体验十分的完整舒服。新武器虽然没有双刀那么爽快，但力量感十足。没有什么值得指摘的。</p><p>对于IGN的10分满分，我觉得一镜到底以及出色的细节带来的惊艳加了不少分。而且自从荒野之息的横空出世，打破了满分的“禁忌”之后，媒体们的评分好像也大胆了很多。我个人想给新战神打9～9.5分，唯一不满意的大概是缺少更加震撼的BOSS战。</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</body>
+</html>
